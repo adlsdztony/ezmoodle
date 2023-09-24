@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "EZmoodle",
+  "version": "1.0",
+  "description": "replace home by dashboard",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://moodle.hku.hk/*"
+      ],
+      "js": ["replace.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
